@@ -1,0 +1,157 @@
+### Dataset Overview
+The dataset contains **8523 rows** and **12 columns**. The structure is as follows:
+
+| Column                     | Type     | Description (Derived)                |
+|----------------------------|----------|-------------------------------------|
+| Item Fat Content           | object   | Fat content of the item (e.g., "Low Fat", "Regular") |
+| Item Identifier            | object   | Unique identifier for each item |
+| Item Type                  | object   | Category/type of item (e.g., "Frozen Foods") |
+| Outlet Establishment Year  | int64    | Year the outlet was established |
+| Outlet Identifier          | object   | Unique identifier for each outlet |
+| Outlet Location Type       | object   | Location type (e.g., "Tier 1", "Tier 2") |
+| Outlet Size                | object   | Size of the outlet (e.g., "Small", "Medium", "High") |
+| Outlet Type                | object   | Type of outlet (e.g., "Supermarket Type1") |
+| Item Visibility            | float64  | The visibility percentage of the item |
+| Item Weight                | float64  | Weight of the item (some missing values) |
+| Sales                      | float64  | Total sales for the item (target variable) |
+| Rating                     | float64  | Rating for the item (assumed metric for quality) |
+
+---
+
+### **20 Real-Time SQL Business Problems**
+Here are 20 business-relevant SQL problems/questions based on this dataset:
+
+#### **Sales & Revenue Analysis**
+1. **Find total sales** for each outlet and sort by descending order of revenue.
+2. **List the top 5 items** with the highest sales across all outlets.
+3. Calculate **average sales** per `Item Type` for each `Outlet Type`.
+4. Find the **outlet with the highest revenue** for items of "Fruits and Vegetables".
+5. Determine the **contribution of each `Item Fat Content`** type towards total sales.
+
+#### **Outlet Performance**
+6. Identify the **average sales per outlet size** (Small, Medium, High).
+7. Find the **oldest and newest outlets** in the dataset based on the `Outlet Establishment Year`.
+8. Compare **sales performance** across different `Outlet Location Type` (Tier 1, 2, 3).
+9. Rank the outlets based on **total sales** within each `Outlet Type`.
+10. Identify the **outlet where item visibility is the lowest** on average.
+
+#### **Item-Level Insights**
+11. Calculate **average sales** and **average rating** for each `Item Type`.
+12. Identify items with **missing `Item Weight`** and determine their `Item Type` distribution.
+13. For each `Item Fat Content`, find the **average visibility and sales**.
+14. Determine which **Item Type** contributes the most to total sales.
+15. Calculate the **percentage of items** having "Low Fat" compared to "Regular" fat content.
+
+#### **Rating Analysis**
+16. List the **outlets with the highest average item ratings**.
+17. Identify items with a **rating of 5.0** and analyze their total sales contribution.
+18. Determine the **average sales and visibility** of items with different ratings.
+
+#### **Operational Analysis**
+19. Find the **average item weight** for each `Item Type` and sort it in descending order.
+20. Identify if there is a relationship between **item visibility** and sales performance (e.g., higher visibility leading to higher sales).
+
+Let me know if you need SQL query examples or further details for any of these questions! 🚀
+
+Here are some tricky, thought-provoking SQL questions you can tackle using the **BlinkIT Grocery Dataset**:
+
+----------------------------------------------------------------------------------------------------------------
+
+### **Advanced and Tricky Questions**
+
+#### **1. Find the top 3 outlets where the sales of "Health and Hygiene" items contribute the most to their total sales.**
+- Analyze how important specific item types are for particular outlets.
+
+#### **2. Determine the top 5 items that are the most visible (highest average `Item_Visibility`) but have below-average sales.**
+- Insight: Identify items that are displayed prominently but don’t convert to sales.
+
+#### **3. Compare the sales contribution of each `Outlet_Type` for "Frozen Foods" and "Dairy" categories.**
+- Insight: Evaluate the strengths of different outlet types for specific categories.
+
+#### **4. Identify outlets where more than 50% of the items sold are "Low Fat".**
+- Insight: Determine which outlets prioritize health-conscious items.
+
+#### **5. Calculate the average sales per year for each outlet, considering its establishment year.**
+- Insight: Compare newer outlets' performance with older ones.
+
+#### **6. Determine the correlation between `Item_Visibility` and `Sales` for different `Outlet_Types`.**
+- Insight: Investigate whether better visibility leads to higher sales in various outlet types.
+
+#### **7. Find the most profitable `Item_Type` for each `Outlet_Size`.**
+- Insight: Determine which product categories perform best depending on outlet size.
+
+#### **8. Identify the outlets where sales consistently fall below the median sales value of all outlets.**
+- Insight: Focus on underperforming outlets.
+
+#### **9. Rank the outlets based on their average sales growth year-over-year.**
+- Insight: Identify outlets with steady growth trends.
+
+#### **10. For each outlet, calculate the percentage of items with a rating of 4.0 or higher.**
+- Insight: Assess product satisfaction by location.
+
+---
+
+### **Real-Life Scenarios**
+
+#### **11. Which item types have the largest variation in sales across outlets?**
+- Insight: Identify items with inconsistent performance and investigate.
+
+#### **12. Determine which `Outlet_Size` has the largest proportion of "Regular" items in sales.**
+- Insight: Identify size preferences for regular-fat items.
+
+#### **13. Identify items that contribute to over 20% of total sales for their respective `Outlet_Identifier`.**
+- Insight: Highlight high-performing items specific to each outlet.
+
+#### **14. Compare the average sales for "Tier 1" outlets vs. "Tier 3" outlets, broken down by `Item_Type`.**
+- Insight: Spot regional preferences for items.
+
+#### **15. List the `Item_Identifiers` with the highest sales but the lowest average ratings.**
+- Insight: Identify popular but poorly-rated items.
+
+---
+
+### **Challenging Analytical Questions**
+
+#### **16. Which outlets have their highest-rated items in the top 10% of sales but their lowest-rated items in the bottom 10%?**
+- Insight: Evaluate the consistency of product quality and popularity.
+
+#### **17. Find the items with the highest visibility-to-sales ratio.**
+- Insight: Identify products that may need better marketing to convert visibility into sales.
+
+#### **18. Calculate the total sales of all "Tier 2" outlets, excluding items with below-average visibility.**
+- Insight: Evaluate the impact of item placement on sales in Tier 2 locations.
+
+#### **19. Identify item types where the highest sales come from outlets established after 2010.**
+- Insight: Discover trends in newer outlets.
+
+#### **20. Determine the average sales for items sold at outlets with "Small" size and low visibility (less than 10%).**
+- Insight: Investigate low-visibility products’ performance in smaller outlets.
+
+---
+
+### **Bonus Questions**
+
+#### **21. What is the revenue contribution of items with ratings between 3.0 and 4.0 in "High" outlet sizes?**
+- Insight: Focus on mid-performing items in larger outlets.
+
+#### **22. Find items where the visibility is above 20% but sales fall below the median sales value of all items.**
+- Insight: Identify underperforming but prominently displayed items.
+
+#### **23. Which outlet and item type combination has the highest deviation from average sales?**
+- Insight: Spot unusual outliers in performance.
+
+#### **24. For each `Outlet_Type`, identify the top 3 outlets based on total sales of "Snacks".**
+- Insight: Understand performance leaders for popular items.
+
+#### **25. Calculate the percentage of items with ratings less than 3.0 contributing to overall sales for each outlet.**
+- Insight: Assess how lower-rated products impact revenue at each location.
+
+---
+
+Would you like me to write SQL queries for any of these questions or help with any specific one?
+
+Potential Follow-Up Questions
+What is the percentage contribution of "Frozen Foods" and "Dairy" to the total sales of each Outlet_Type?
+Are there any trends across different Outlet_Size for these categories?
+Does the location (Outlet_Location_Type) influence the sales of "Frozen Foods" and "Dairy"?
+Let me know if you'd like me to assist with these additional analyses!
