@@ -10,6 +10,7 @@ This repository contains Tableau dashboard, visualization, and data analysis pro
 
  ## Project Description
 
+
  This interactive Tableau dashboard was created to visualize and analyze HR data to derive insights into the employee base. The key goals were to:
  
  - Provide analysis of employee distribution across business units and roles
